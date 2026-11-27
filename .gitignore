@@ -12,3 +12,4 @@ node_modules/
 /web/public/images/*.webp
 /web/tsconfig.tsbuildinfo
 /web/public/js/site.js
+/deploy/dist/
