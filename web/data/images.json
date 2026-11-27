@@ -1,0 +1,823 @@
+{
+ "scarlet-homes-about.jpg": {
+  "w": 768,
+  "h": 512,
+  "widths": [
+   480,
+   768
+  ]
+ },
+ "scarlet-homes-hero-duplex-dusk.jpg": {
+  "w": 1536,
+  "h": 1024,
+  "widths": [
+   480,
+   960,
+   1536
+  ]
+ },
+ "scarlet-homes-hero-nightfall.jpg": {
+  "w": 1600,
+  "h": 1066,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "scarlet-homes-hero-royal-delight.jpg": {
+  "w": 1600,
+  "h": 738,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "scarlet-homes-in-bath-1.jpg": {
+  "w": 1400,
+  "h": 934,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-bath-10.jpg": {
+  "w": 1400,
+  "h": 932,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-bath-11.jpg": {
+  "w": 1400,
+  "h": 2486,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-bath-12.jpg": {
+  "w": 1400,
+  "h": 933,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-bath-2.jpg": {
+  "w": 1400,
+  "h": 2487,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-bath-3.jpg": {
+  "w": 1400,
+  "h": 933,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-bath-4.jpg": {
+  "w": 1400,
+  "h": 2487,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-bath-5.jpg": {
+  "w": 1400,
+  "h": 934,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-bath-6.jpg": {
+  "w": 1400,
+  "h": 2487,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-bath-7.jpg": {
+  "w": 1400,
+  "h": 933,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-bath-8.jpg": {
+  "w": 1400,
+  "h": 933,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-bath-9.jpg": {
+  "w": 1400,
+  "h": 933,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-bed-1.jpg": {
+  "w": 1400,
+  "h": 934,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-bed-2.jpg": {
+  "w": 1400,
+  "h": 942,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-bed-3.jpg": {
+  "w": 1400,
+  "h": 933,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-ext-1.jpg": {
+  "w": 1264,
+  "h": 848,
+  "widths": [
+   480,
+   960,
+   1264
+  ]
+ },
+ "scarlet-homes-in-ext-2.jpg": {
+  "w": 1400,
+  "h": 1023,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-ext-3.jpg": {
+  "w": 1400,
+  "h": 933,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-ext-4.jpg": {
+  "w": 1400,
+  "h": 933,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-ext-5.jpg": {
+  "w": 1400,
+  "h": 933,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-ext-6.jpg": {
+  "w": 777,
+  "h": 1381,
+  "widths": [
+   480,
+   777
+  ]
+ },
+ "scarlet-homes-in-ext-7.jpg": {
+  "w": 875,
+  "h": 1556,
+  "widths": [
+   480,
+   875
+  ]
+ },
+ "scarlet-homes-in-feature-1.jpg": {
+  "w": 1400,
+  "h": 933,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-feature-2.jpg": {
+  "w": 1400,
+  "h": 938,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-feature-3.jpg": {
+  "w": 1400,
+  "h": 2487,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-feature-4.jpg": {
+  "w": 1400,
+  "h": 2487,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-feature-5.jpg": {
+  "w": 1400,
+  "h": 2099,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-feature-6.jpg": {
+  "w": 1400,
+  "h": 2486,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-feature-7.jpg": {
+  "w": 1400,
+  "h": 2486,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-feature-8.jpg": {
+  "w": 1400,
+  "h": 2486,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-feature-9.jpg": {
+  "w": 1400,
+  "h": 931,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-kitchen-1.jpg": {
+  "w": 1400,
+  "h": 933,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-kitchen-2.jpg": {
+  "w": 1400,
+  "h": 934,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-kitchen-3.jpg": {
+  "w": 1400,
+  "h": 931,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-kitchen-4.jpg": {
+  "w": 1400,
+  "h": 933,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-living-1.jpg": {
+  "w": 1400,
+  "h": 934,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-living-2.jpg": {
+  "w": 1400,
+  "h": 934,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-living-3.jpg": {
+  "w": 1400,
+  "h": 924,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-living-4.jpg": {
+  "w": 1400,
+  "h": 933,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-living-5.jpg": {
+  "w": 1400,
+  "h": 933,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-living-6.jpg": {
+  "w": 1400,
+  "h": 931,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-living-7.jpg": {
+  "w": 1400,
+  "h": 933,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-living-8.jpg": {
+  "w": 1400,
+  "h": 931,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-outdoor-1.jpg": {
+  "w": 1400,
+  "h": 934,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-outdoor-2.jpg": {
+  "w": 1400,
+  "h": 933,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-in-outdoor-3.jpg": {
+  "w": 1400,
+  "h": 933,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-knockdown-rebuild.jpg": {
+  "w": 1100,
+  "h": 740,
+  "widths": [
+   480,
+   960,
+   1100
+  ]
+ },
+ "scarlet-homes-logo.png": {
+  "w": 440,
+  "h": 234,
+  "widths": [
+   440
+  ]
+ },
+ "scarlet-homes-p-bara-place.jpg": {
+  "w": 1280,
+  "h": 720,
+  "widths": [
+   480,
+   960,
+   1280
+  ]
+ },
+ "scarlet-homes-p-bold-box.jpg": {
+  "w": 1400,
+  "h": 727,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-p-bold-french.jpg": {
+  "w": 1400,
+  "h": 875,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-p-candling-rd.jpg": {
+  "w": 1400,
+  "h": 786,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-p-ferunga.jpg": {
+  "w": 1400,
+  "h": 788,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-p-germein.jpg": {
+  "w": 1400,
+  "h": 929,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-p-gribbin-rd.jpg": {
+  "w": 1400,
+  "h": 788,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-p-project-53.jpg": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   480,
+   960,
+   1600
+  ]
+ },
+ "scarlet-homes-p-project-y.jpg": {
+  "w": 1400,
+  "h": 1123,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-p-split-box.jpg": {
+  "w": 1400,
+  "h": 929,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-pf-10-5m-single-storey.jpg": {
+  "w": 1200,
+  "h": 960,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "scarlet-homes-pf-11m-box-2.jpg": {
+  "w": 1200,
+  "h": 960,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "scarlet-homes-pf-11m-frontage.jpg": {
+  "w": 1200,
+  "h": 960,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "scarlet-homes-pf-12m-full-brick.jpg": {
+  "w": 1200,
+  "h": 960,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "scarlet-homes-pf-12m-modern.jpg": {
+  "w": 1200,
+  "h": 960,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "scarlet-homes-pf-21-delight.jpg": {
+  "w": 1200,
+  "h": 925,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "scarlet-homes-pf-9m-single-storey.jpg": {
+  "w": 1200,
+  "h": 960,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "scarlet-homes-pf-boxplay-2.jpg": {
+  "w": 1200,
+  "h": 677,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "scarlet-homes-pf-boxplay.jpg": {
+  "w": 1200,
+  "h": 681,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "scarlet-homes-pf-curton.jpg": {
+  "w": 1200,
+  "h": 689,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "scarlet-homes-pf-double-storey-box.jpg": {
+  "w": 1200,
+  "h": 956,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "scarlet-homes-pf-double-storey-modern.jpg": {
+  "w": 1200,
+  "h": 956,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "scarlet-homes-pf-french-delight.jpg": {
+  "w": 858,
+  "h": 481,
+  "widths": [
+   480,
+   858
+  ]
+ },
+ "scarlet-homes-pf-hazelton.jpg": {
+  "w": 1200,
+  "h": 797,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "scarlet-homes-pf-levade.jpg": {
+  "w": 1200,
+  "h": 956,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "scarlet-homes-pf-massencore.jpg": {
+  "w": 768,
+  "h": 512,
+  "widths": [
+   480,
+   768
+  ]
+ },
+ "scarlet-homes-pf-mini-build.jpg": {
+  "w": 1200,
+  "h": 797,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "scarlet-homes-pf-neighbor.jpg": {
+  "w": 1200,
+  "h": 797,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "scarlet-homes-pf-plummet.jpg": {
+  "w": 1200,
+  "h": 675,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "scarlet-homes-pf-pomfret-ave.jpg": {
+  "w": 1200,
+  "h": 675,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "scarlet-homes-pf-project-x.jpg": {
+  "w": 1200,
+  "h": 962,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "scarlet-homes-pf-refre.jpg": {
+  "w": 1066,
+  "h": 683,
+  "widths": [
+   480,
+   960,
+   1066
+  ]
+ },
+ "scarlet-homes-pf-ridge-square.jpg": {
+  "w": 1200,
+  "h": 797,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "scarlet-homes-pf-simple-awesome.jpg": {
+  "w": 1200,
+  "h": 866,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "scarlet-homes-pf-sparkes-cres.jpg": {
+  "w": 1200,
+  "h": 848,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "scarlet-homes-pf-yet-another.jpg": {
+  "w": 1200,
+  "h": 962,
+  "widths": [
+   480,
+   960,
+   1200
+  ]
+ },
+ "scarlet-homes-process.jpg": {
+  "w": 1400,
+  "h": 1066,
+  "widths": [
+   480,
+   960,
+   1400
+  ]
+ },
+ "scarlet-homes-svc-granny-flat.jpg": {
+  "w": 1100,
+  "h": 733,
+  "widths": [
+   480,
+   960,
+   1100
+  ]
+ },
+ "scarlet-homes-svc-knockdown.jpg": {
+  "w": 1100,
+  "h": 733,
+  "widths": [
+   480,
+   960,
+   1100
+  ]
+ },
+ "scarlet-homes-svc-new-home.jpg": {
+  "w": 1100,
+  "h": 574,
+  "widths": [
+   480,
+   960,
+   1100
+  ]
+ }
+}

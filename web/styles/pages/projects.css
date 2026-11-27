@@ -1,0 +1,4 @@
+/* Styles that exist only on /projects/ in the reference (they would change other pages). */
+
+/* ==== v9b: full-shape gallery images ==== */
+/* v9b: full-shape gallery images */.sh-gal:not(.mo) .sh-gi{aspect-ratio:16/10}

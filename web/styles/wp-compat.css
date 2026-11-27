@@ -1,0 +1,14 @@
+/* Rules from the reference's WordPress theme / Elementor wrapper that reached the widget
+ * content. The wrappers are gone, so they are reproduced here with the same specificity and
+ * cascade position (before the widget styles) to keep rendering identical.
+ * `.elementor X` (0,1,1) applied only inside #sh-top (the Elementor container), never to the
+ * body-level portal, hence `:where(#sh-top).sh X` (also 0,1,1). */
+:where(body){margin:0}
+body{background-color:#ffffff;color:#000000;font-size:16px;line-height:1.5;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+/* WP global styles: a{color:var(--wp--preset--color--contrast)}; that preset is undefined, so links inherit */
+a:where(:not(.wp-element-button)){color:inherit}
+html{scroll-behavior:smooth}
+:where(#sh-top).sh *,:where(#sh-top).sh :after,:where(#sh-top).sh :before{box-sizing:border-box}
+:where(#sh-top).sh a{box-shadow:none;text-decoration:none}
+:where(#sh-top).sh img{border:none;border-radius:0;box-shadow:none;height:auto;max-width:100%}
+:where(#sh-top).sh embed,:where(#sh-top).sh iframe,:where(#sh-top).sh object,:where(#sh-top).sh video{border:none;line-height:1;margin:0;max-width:100%;width:100%}

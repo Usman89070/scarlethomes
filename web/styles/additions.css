@@ -1,0 +1,5 @@
+/* Build additions (not in the reference). Zero/low specificity so every reference rule wins. */
+/* <picture> wrappers for WebP must not create a box: the <img> lays out as before. */
+:where(.sh) picture{display:contents}
+/* width/height attributes were added for CLS; keep the reference's intrinsic sizing. */
+:where(img[data-ar]){width:auto;height:auto}
