@@ -3,3 +3,5 @@
 :where(.sh) picture{display:contents}
 /* width/height attributes were added for CLS; keep the reference's intrinsic sizing. */
 :where(img[data-ar]){width:auto;height:auto}
+/* ...and its <source> must not become an (empty) flex/grid item either. */
+:where(.sh) picture>source{display:none}

@@ -32,7 +32,7 @@ export default function NewHomeBuildersSydneyPage() {
       <section className="sh-sec ">
       <div className="sh-wrap sh-split">
         <div className="sh-sp-img">
-          <Img src="/images/scarlet-homes-pf-9m-single-storey.jpg" alt="Single-storey modern home design for a 9 m frontage by Scarlet Homes" loading="lazy" />
+          <Img src="/images/scarlet-homes-pf-9m-single-storey.jpg" alt="Single-storey modern home design for a 9 m frontage by Scarlet Homes" loading="lazy" direct />
           <span className="sh-sp2">
             <Img src="/images/scarlet-homes-in-feature-5.jpg" alt="Interior of a home built by Scarlet Homes" loading="lazy" />
           </span>
@@ -683,7 +683,7 @@ export default function NewHomeBuildersSydneyPage() {
       <section className="sh-cta sh-ivory">
       <div className="sh-wrap">
         <div className="sh-cta-in rv">
-          <Img src="/images/scarlet-homes-p-germein.jpg" alt="Germein home by Scarlet Homes" loading="lazy" sizes="100vw" />
+          <Img src="/images/scarlet-homes-p-germein.jpg" alt="Germein home by Scarlet Homes" loading="lazy" direct sizes="100vw" />
           {"\n "}
           <div>
             <h2>Ready to Start Building Your Sydney Home?</h2>

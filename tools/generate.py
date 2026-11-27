@@ -375,16 +375,17 @@ def emit_img(el, ctx):
 _emit = emit
 def emit(el, ctx, ind=0, hook=None):  # noqa: F811
     if el['t'] == 'e':
-        prev = ctx.get('parent_classes'); prev_s = ctx.get('sizes')
+        prev = ctx.get('parent_classes'); prev_s = ctx.get('sizes'); prev_cur = ctx.get('cur_classes')
         cls = classes(el)
+        ctx['parent_classes'] = prev_cur or []
         # sizes hints for responsive images
         if any(c in ('sh-hero', 'sh-ph-bg', 'sh-sl', 'sh-strip', 'sh-cta-in', 'sh-lead-bg') for c in cls):
             ctx['sizes'] = '100vw'
         elif any(c in ('sh-gi', 'sh-ig', 'sh-igg', 'sh-ins', 'sh-pc', 'sh-v') for c in cls):
             ctx['sizes'] = '(max-width: 700px) 50vw, 33vw'
-        ctx['parent_classes'] = cls
+        ctx['cur_classes'] = cls
         r = _emit(el, ctx, ind, hook)
-        ctx['parent_classes'] = prev; ctx['sizes'] = prev_s
+        ctx['parent_classes'] = prev; ctx['sizes'] = prev_s; ctx['cur_classes'] = prev_cur
         return r
     return _emit(el, ctx, ind, hook)
 

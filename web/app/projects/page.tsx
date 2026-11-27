@@ -703,7 +703,7 @@ export default function ProjectsPage() {
       <section className="sh-cta sh-ivory">
       <div className="sh-wrap">
         <div className="sh-cta-in rv">
-          <Img src="/images/scarlet-homes-p-germein.jpg" alt="Germein home by Scarlet Homes" loading="lazy" sizes="100vw" />
+          <Img src="/images/scarlet-homes-p-germein.jpg" alt="Germein home by Scarlet Homes" loading="lazy" direct sizes="100vw" />
           {"\n "}
           <div>
             <h2>Ready to Start Building Your Sydney Home?</h2>

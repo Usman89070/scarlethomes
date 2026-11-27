@@ -88,7 +88,7 @@ export default function ServiceAreasPage() {
       <section className="sh-sec sh-ivory">
       <div className="sh-wrap sh-split">
         <div className="sh-sp-img">
-          <Img src="/images/scarlet-homes-in-ext-1.jpg" alt="Completed home built by Scarlet Homes" loading="lazy" />
+          <Img src="/images/scarlet-homes-in-ext-1.jpg" alt="Completed home built by Scarlet Homes" loading="lazy" direct />
           <span className="sh-sp2">
             <Img src="/images/scarlet-homes-in-feature-4.jpg" alt="Interior of a home built by Scarlet Homes" loading="lazy" />
           </span>
@@ -214,7 +214,7 @@ export default function ServiceAreasPage() {
       <section className="sh-cta sh-ivory">
       <div className="sh-wrap">
         <div className="sh-cta-in rv">
-          <Img src="/images/scarlet-homes-p-germein.jpg" alt="Germein home by Scarlet Homes" loading="lazy" sizes="100vw" />
+          <Img src="/images/scarlet-homes-p-germein.jpg" alt="Germein home by Scarlet Homes" loading="lazy" direct sizes="100vw" />
           {"\n "}
           <div>
             <h2>Ready to Start Building Your Sydney Home?</h2>

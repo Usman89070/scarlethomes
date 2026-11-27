@@ -731,7 +731,7 @@ export default function HomePage() {
         </div>
         <div className="sh-tcard rvs">
           <div className="sh-tc-img">
-            <Img src="/images/scarlet-homes-in-living-1.jpg" alt="Living area in a home built by Scarlet Homes" loading="lazy" />
+            <Img src="/images/scarlet-homes-in-living-1.jpg" alt="Living area in a home built by Scarlet Homes" loading="lazy" direct />
             <div className="sh-tc-badge">
               <span className="G">Google</span>
               <div><span className="st">★★★★★</span><small>Reviews from Sydney homeowners</small></div>
@@ -891,7 +891,7 @@ export default function HomePage() {
       <section className="sh-cta sh-ivory">
       <div className="sh-wrap">
         <div className="sh-cta-in rv">
-          <Img src="/images/scarlet-homes-p-germein.jpg" alt="Germein home by Scarlet Homes" loading="lazy" sizes="100vw" />
+          <Img src="/images/scarlet-homes-p-germein.jpg" alt="Germein home by Scarlet Homes" loading="lazy" direct sizes="100vw" />
           {"\n "}
           <div>
             <h2>Ready to Start Building Your Sydney Home?</h2>
