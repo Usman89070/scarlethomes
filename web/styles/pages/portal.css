@@ -53,3 +53,36 @@
   .sh-po-dl{grid-template-columns:1fr}
   .sh-po-tools .sh-btn{width:100%}
 }
+/* projects / jobs / attendance */
+.sh-po-h4{font-size:12.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin:34px 0 12px}
+.sh-po-h3 .sh-po-pill{vertical-align:middle;margin-left:8px;font-family:var(--f-sans),sans-serif}
+.sh-po-desc{white-space:pre-wrap;color:var(--ink);background:var(--ivory);border-radius:16px;padding:18px 20px;line-height:1.6}
+.sh-po-files{list-style:none;margin:0 0 10px;padding:0;border:1px solid var(--line);border-radius:16px}
+.sh-po-files li{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 16px;border-top:1px solid var(--line)}
+.sh-po-files li:first-child{border-top:0}
+.sh-po-files a{font-weight:700;color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.sh-po-files small{color:var(--mute);font-size:13px}
+.sh-po-files li>small:last-of-type{margin-left:auto}
+.sh-po-ext{font-size:11px;font-weight:800;letter-spacing:.08em;background:var(--ink);color:#fff;border-radius:6px;padding:3px 7px}
+.sh-po-upload{margin-top:10px;background:var(--ivory)!important;border-radius:16px!important;padding:18px 20px!important}
+.sh-po-upload .sh-btn{width:auto;margin:0}
+.sh-po-panel{display:flex;flex-wrap:wrap;gap:18px 30px;align-items:center;justify-content:space-between;border:1.5px solid var(--line);border-radius:18px;padding:20px 22px;margin:20px 0}
+.sh-po-panel>div:first-child{display:grid;gap:3px}
+.sh-po-panel small{color:var(--mute);font-size:13px}
+.sh-po-panel b{font-size:18px}
+.sh-po-panel.sh-po-on{border-color:var(--red);background:#FFF7F7}
+.sh-po-panel-act{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;flex:1 1 320px;justify-content:flex-end}
+.sh-po-panel-act .sh-in{flex:1 1 220px;margin:0}
+.sh-po-panel-act textarea{min-height:70px}
+.sh-po-panel-act .sh-btn{width:auto;margin:0}
+.sh-po-panel .sh-msg{flex-basis:100%;margin-top:0}
+.sh-po-log{list-style:none;margin:0;padding:0;font-size:14.5px;color:var(--mute)}
+.sh-po-log li{padding:8px 0;border-bottom:1px solid var(--line)}
+.sh-po-log b{color:var(--ink)}
+.sh-po-sel{font:inherit;font-size:14px;padding:6px 10px;border-radius:10px;border:1px solid var(--line);background:#fff}
+.sh-po-assign{margin-top:14px}
+.sh-po-tools .sh-in:nth-child(n+2){flex:0 1 200px}
+@media(max-width:700px){
+  .sh-po-panel-act{justify-content:stretch}
+  .sh-po-panel-act .sh-btn,.sh-po-upload .sh-btn{width:100%}
+}

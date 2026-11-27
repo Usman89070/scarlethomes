@@ -1,5 +1,5 @@
 /* Tiny client for the PHP JSON API. Same origin in production; NEXT_PUBLIC_API_BASE in dev. */
-const BASE = process.env.NEXT_PUBLIC_API_BASE || '';
+export const BASE = process.env.NEXT_PUBLIC_API_BASE || '';
 
 export class ApiError extends Error {
   status: number;
@@ -16,12 +16,15 @@ export class ApiError extends Error {
 let csrf = '';
 export const setCsrf = (t: string) => { csrf = t; };
 
+/** GET when body is undefined; POST JSON for objects; POST multipart for FormData. */
 export async function api<T = Record<string, unknown>>(path: string, body?: unknown): Promise<T> {
-  const init: RequestInit = { credentials: 'include', headers: { Accept: 'application/json' } };
+  const headers: Record<string, string> = { Accept: 'application/json' };
+  const init: RequestInit = { credentials: 'include', headers };
   if (body !== undefined) {
     init.method = 'POST';
-    init.headers = { ...init.headers, 'Content-Type': 'application/json', 'X-CSRF-Token': csrf };
-    init.body = JSON.stringify(body);
+    headers['X-CSRF-Token'] = csrf;
+    if (body instanceof FormData) init.body = body;
+    else { headers['Content-Type'] = 'application/json'; init.body = JSON.stringify(body); }
   }
   let res: Response;
   try {
@@ -32,8 +35,11 @@ export async function api<T = Record<string, unknown>>(path: string, body?: unkn
   let data: Record<string, unknown> = {};
   try { data = await res.json(); } catch { /* non-JSON */ }
   if (!res.ok || data.ok === false) {
-    throw new ApiError((data.error as string) || 'Something went wrong. Please try again.', res.status, data.code as string, data.fields as Record<string, string>);
+    const msg = res.status === 413 ? 'The file is too large.' : (data.error as string) || 'Something went wrong. Please try again.';
+    throw new ApiError(msg, res.status, data.code as string, data.fields as Record<string, string>);
   }
   if (typeof data.csrf === 'string') csrf = data.csrf;
   return data as T;
 }
+
+export const fileUrl = (kind: 'attachment' | 'checkout', id: number) => `${BASE}/api/files.php?a=${kind}&id=${id}`;

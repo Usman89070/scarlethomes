@@ -16,13 +16,15 @@ require dirname(__DIR__) . '/lib/bootstrap.php';
 
 function admins_exist(): bool
 {
-    return (int)db()->query("SELECT COUNT(*) FROM users WHERE role = 'admin'")->fetchColumn() > 0;
+    return (int)db()->query("SELECT COUNT(*) FROM roles r JOIN users u ON u.id = r.user_id WHERE r.role = 'admin' AND u.status = 1")->fetchColumn() > 0;
 }
 
 function create_admin(string $email, string $name, string $pass): void
 {
-    db()->prepare("INSERT INTO users (email, name, password_hash, role, is_active, must_change_password) VALUES (?,?,?,'admin',1,0)")
-        ->execute([mb_strtolower($email), $name, password_hash($pass, PASSWORD_DEFAULT)]);
+    db()->prepare('INSERT INTO users (name, email, password, status, must_change_password, created_at, updated_at) VALUES (?,?,?,1,0,?,?)')
+        ->execute([$name ?: $email, mb_strtolower($email), hash_password($pass), now_utc(), now_utc()]);
+    db()->prepare("INSERT INTO roles (user_id, role, created_at, updated_at) VALUES (?, 'admin', ?, ?)")
+        ->execute([(int)db()->lastInsertId(), now_utc(), now_utc()]);
 }
 
 if (PHP_SAPI === 'cli') {

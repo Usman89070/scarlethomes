@@ -38,19 +38,18 @@ if ($a === 'login') {
         fail('Too many sign-in attempts. Please wait ' . $win . ' minutes and try again.', 429, ['code' => 'locked']);
     }
 
-    $st = db()->prepare('SELECT u.*, c.status AS contractor_status FROM users u LEFT JOIN contractors c ON c.id = u.contractor_id WHERE u.email = ?');
+    $st = db()->prepare('SELECT u.id, u.password, u.status FROM users u WHERE u.email = ?');
     $st->execute([$email]);
     $u = $st->fetch();
     // Always run password_verify so timing does not reveal whether the account exists.
-    $hash = $u['password_hash'] ?? '$2y$10$DtJkyDW.Df1XD8nLyUFvEeyqL7ICSd2adbXjH8TreMkzw4CA..u0G';
-    $ok = password_verify($pass, $hash) && $u && (int)$u['is_active']
-        && ($u['role'] === 'admin' || $u['contractor_status'] === 'active');
+    $hash = $u['password'] ?? '$2y$10$DtJkyDW.Df1XD8nLyUFvEeyqL7ICSd2adbXjH8TreMkzw4CA..u0G';
+    $ok = password_verify($pass, $hash) && $u && (int)$u['status'];
 
     db()->prepare('INSERT INTO login_attempts (ip_hash, email, success) VALUES (?,?,?)')->execute([$ip, $email, $ok ? 1 : 0]);
     if (!$ok) fail($generic, 401);
 
-    if (password_needs_rehash($u['password_hash'], PASSWORD_DEFAULT)) {
-        db()->prepare('UPDATE users SET password_hash = ? WHERE id = ?')->execute([password_hash($pass, PASSWORD_DEFAULT), $u['id']]);
+    if (password_needs_rehash($u['password'], PASSWORD_BCRYPT, ['cost' => 12])) {
+        db()->prepare('UPDATE users SET password = ? WHERE id = ?')->execute([hash_password($pass), $u['id']]);
     }
     session_regenerate_id(true);
     $_SESSION['uid'] = (int)$u['id'];
@@ -73,12 +72,12 @@ if ($a === 'password') {
     $u = require_user(true);
     $cur = is_string($in['current'] ?? null) ? $in['current'] : '';
     $next = is_string($in['next'] ?? null) ? $in['next'] : '';
-    $st = db()->prepare('SELECT password_hash FROM users WHERE id = ?');
+    $st = db()->prepare('SELECT password FROM users WHERE id = ?');
     $st->execute([$u['id']]);
     if (!password_verify($cur, (string)$st->fetchColumn())) fail('Your current password is incorrect.', 400);
     if ($err = password_policy_error($next)) fail($err, 400);
     if (hash_equals($cur, $next)) fail('Choose a password you have not used here before.', 400);
-    db()->prepare('UPDATE users SET password_hash = ?, must_change_password = 0 WHERE id = ?')->execute([password_hash($next, PASSWORD_DEFAULT), $u['id']]);
+    db()->prepare('UPDATE users SET password = ?, must_change_password = 0, updated_at = ? WHERE id = ?')->execute([hash_password($next), now_utc(), $u['id']]);
     session_regenerate_id(true);
     json_out(['ok' => true, 'user' => public_user(current_user())]);
 }

@@ -7,8 +7,8 @@ hosting – see [`deploy/README.md`](deploy/README.md).
 ```
 reference/   downloaded reference pages, extracted widgets, DOM trees, seo.json (comparison only)
 web/         Next.js app (App Router, TypeScript) -> builds to web/out
-api/         PHP endpoints (enquiry, auth, me, admin, setup/create-admin)
-db/          schema.sql, seed.sql
+api/         PHP endpoints (enquiry, auth, me, users, projects, files, attendance, enquiries, setup/create-admin)
+db/          schema.sql, migrate-from-old-site.sql, seed.sql
 deploy/      Hostinger README + .htaccess
 tools/       extraction/generation scripts, comparison and test scripts, PHP dev router
 ```
@@ -45,6 +45,15 @@ tools/       extraction/generation scripts, comparison and test scripts, PHP dev
 - **SEO** – titles, descriptions and JSON-LD copied from the reference (`web/data/seo.json`),
   canonical URLs on `https://scarlethomes.com.au`, Open Graph/Twitter tags, `sitemap.xml`,
   `robots.txt`, favicons.
+
+## Contractor portal
+
+`/portal/` (React UI in `web/components/portal/`) + PHP API in `api/`, built on the old site's
+database model: users with roles (admin, supervisor, user = contractor), projects, contractor
+assignments (default → booked → working → completed), plans/files, project change logs, site
+attendance (check-in / check-out with note + photo) and website enquiries (`contacts`).
+Files are stored privately (`uploads_dir`) and served only by `api/files.php` after a
+permission check. See `deploy/README.md` for the permission table and data migration.
 
 ## Run locally
 
@@ -109,7 +118,7 @@ node tools/test-ui.js http://127.0.0.1:8080 admin@example.com '<admin password>'
 node tools/compare.js http://127.0.0.1:8080 all 360,768,1366 --shots
 ```
 
-`test-api.mjs` (39 checks) expects a fresh database with `seed.sql` and an admin
+`test-api.mjs` (64 checks) and `test-ui.js` (99 checks) expect a fresh database with `schema.sql` + `seed.sql` and an admin
 `admin@example.com` / `Adm1nPassw0rd!` (create it with `ADMIN_PASSWORD='Adm1nPassw0rd!' php api/setup/create-admin.php admin@example.com Admin`).
 `compare.js` loads each page on the reference and on the build at each width, scrolls to
 trigger reveals, then compares every element's box and key computed styles; screenshots and

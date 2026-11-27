@@ -204,20 +204,22 @@ function require_csrf(): void
     }
 }
 
+/* Role from the `roles` table (one row per user in practice; highest wins if several). */
+const ROLE_SQL = "(SELECT r.role FROM roles r WHERE r.user_id = u.id ORDER BY FIELD(r.role,'admin','supervisor','user') LIMIT 1)";
+
 function current_user(): ?array
 {
     start_session();
     if (empty($_SESSION['uid'])) return null;
-    $st = db()->prepare('SELECT u.id, u.email, u.name, u.role, u.contractor_id, u.is_active, u.must_change_password,
-                                c.status AS contractor_status
-                           FROM users u LEFT JOIN contractors c ON c.id = u.contractor_id WHERE u.id = ?');
+    $st = db()->prepare('SELECT u.id, u.name, u.email, u.status, u.must_change_password, ' . ROLE_SQL . ' AS role FROM users u WHERE u.id = ?');
     $st->execute([(int)$_SESSION['uid']]);
     $u = $st->fetch();
-    if (!$u || !(int)$u['is_active'] || ($u['role'] === 'contractor' && $u['contractor_status'] !== 'active')) {
+    if (!$u || !(int)$u['status']) {
         $_SESSION = [];
         session_regenerate_id(true);
         return null;
     }
+    $u['role'] = $u['role'] ?: 'user';
     return $u;
 }
 
@@ -228,6 +230,18 @@ function require_user(bool $allowPendingPasswordChange = false): array
     if (!$allowPendingPasswordChange && (int)$u['must_change_password']) {
         fail('Please set a new password first.', 403, ['code' => 'must_change_password']);
     }
+    return $u;
+}
+
+function is_staff(array $u): bool
+{
+    return in_array($u['role'], ['admin', 'supervisor'], true);
+}
+
+function require_staff(): array
+{
+    $u = require_user();
+    if (!is_staff($u)) fail('Forbidden.', 403);
     return $u;
 }
 
@@ -242,9 +256,31 @@ function public_user(array $u): array
 {
     return [
         'id' => (int)$u['id'], 'email' => $u['email'], 'name' => $u['name'], 'role' => $u['role'],
-        'contractor_id' => $u['contractor_id'] !== null ? (int)$u['contractor_id'] : null,
         'must_change_password' => (bool)$u['must_change_password'],
     ];
+}
+
+/* UTC "now" for DATETIME/TIMESTAMP columns (the old app stored UTC too). */
+function now_utc(): string
+{
+    return gmdate('Y-m-d H:i:s');
+}
+
+/* Today's date in Sydney (for booked_on / worked_on / completed_on). */
+function today_local(): string
+{
+    return (new DateTime('now', new DateTimeZone((string)(cfg('timezone') ?: 'Australia/Sydney'))))->format('Y-m-d');
+}
+
+function hash_password(string $p): string
+{
+    return password_hash($p, PASSWORD_BCRYPT, ['cost' => 12]); // same cost as the old Laravel app
+}
+
+function int_in(array $src, string $k): int
+{
+    $v = $src[$k] ?? 0;
+    return is_numeric($v) ? (int)$v : 0;
 }
 
 function password_policy_error(string $p): ?string

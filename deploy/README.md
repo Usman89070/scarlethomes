@@ -18,11 +18,29 @@ public_html/
 
 ## 1. Database
 
-1. hPanel → **Databases → MySQL Databases** → create a database and a user (note the
-   prefixed names, e.g. `u123456789_scarlet`) and a strong password. Host is `localhost`.
-2. hPanel → **Databases → phpMyAdmin** → open the new database → **Import** →
-   choose `db/schema.sql` → **Go**.
-3. Do **not** import `db/seed.sql` on production (it is sample data for local testing).
+The portal uses the **same tables as the old site's database** (`users`, `roles`, `projects`,
+`project_user_pivots`, `project_attachments`, `project_logs`, `attendances`, `contacts`), so
+the old data carries over and everyone keeps their current password.
+
+**A) Keep the old data (recommended)**
+
+1. phpMyAdmin → old database (`scarleth_database`) → **Export** (keep this backup).
+2. Either use that same database, or hPanel → **Databases → MySQL Databases** → create a new
+   database + user and **Import** the export into it.
+3. phpMyAdmin → that database → **Import** → `db/migrate-from-old-site.sql` → **Go** (run it
+   once). It adds a few columns/tables (password-change flag, last login, contractor business
+   details, login rate limiting, enquiry fields) and clears the old Laravel sessions. The old
+   website/CMS tables are left alone; the commented `DROP TABLE` at the end removes them
+   later if you want.
+4. Copy the old site's uploaded files (plans, completion files, check-out photos): download
+   the **contents** of the old Laravel `storage/app/public/` folder (it contains e.g.
+   `project/…` and `attendance/…`) and upload them into the portal's uploads folder (step 2,
+   `uploads_dir`), keeping the folder structure. Files that are missing show as
+   "file not uploaded to the server yet" in the portal.
+
+**B) Fresh start (no old data)**: create a database + user, then **Import** `db/schema.sql`.
+
+Do **not** import `db/seed.sql` on production (sample data for local testing).
 
 ## 2. API configuration
 
@@ -35,6 +53,13 @@ public_html/
      (**Emails**), then use it as `from` and as the SMTP `user`/`pass`
      (`smtp.hostinger.com`, port `465`, `ssl`). Enquiries go to `to`
      (`info@scarlethomes.com.au`). `transport => 'mail'` (PHP `mail()`) also works on Hostinger.
+   - `uploads_dir` – where portal files are stored. Recommended: a folder **outside**
+     `public_html`, e.g. `/home/u123456789/domains/scarlethomes.com.au/storage/uploads`
+     (create it in File Manager). If left `null`, `public_html/api/storage/uploads` is used
+     (blocked from the web by `.htaccess`). Files are only ever served through
+     `api/files.php` after a permission check.
+   - `max_upload_mb` – 20 by default (Hostinger's PHP upload limit is higher; change it in
+     hPanel → **Advanced → PHP Configuration** if needed).
    - Leave `insecure_cookies` = `false` and `dev_cors_origin` = `''` on production.
 
 ## 3. Build and upload
@@ -72,7 +97,9 @@ Upload with hPanel → **Files → File Manager** (or FTP/SFTP):
 
 Make sure **SSL** is active for the domain (hPanel → **Security → SSL**) before enabling HSTS.
 
-## 5. Create the first admin (once)
+## 5. Create the first admin (only if you started fresh)
+
+With the old data (option A) the existing admins already work – skip this step.
 
 **With SSH** (hPanel → **Advanced → SSH Access**):
 
@@ -97,9 +124,23 @@ curl -X POST https://scarlethomes.com.au/api/setup/create-admin.php -d token=<to
 It only works while no admin exists. Afterwards delete `public_html/api/setup/`, restore the
 `.htaccess` line and set `setup_token` back to `''`.
 
-Further admins and all contractors are created in the portal (`/portal/` → sign in as admin →
-**Add Contractor**). Each new contractor gets a one-time temporary password, shown once, and
-must choose their own password on first sign-in. **Reset Password** issues a new temporary one.
+Further users are created in the portal (`/portal/` → sign in as admin → **Users → Add
+User**; role Contractor, Supervisor or Admin). Each new user gets a one-time temporary
+password, shown once, and must choose their own password on first sign-in. **Reset Password**
+issues a new temporary one.
+
+### Who can do what
+
+| | Admin | Supervisor | Contractor (`user`) |
+|---|---|---|---|
+| Projects: create / edit / archive | ✓ | ✓ | – (sees only assigned jobs) |
+| Delete a project (no files) | ✓ | – | – |
+| Upload / delete plans & files | ✓ | ✓ | completion file only |
+| Assign contractors, change job status | ✓ | ✓ | own job: Booked → Working → Completed |
+| Check in / check out (note + photo) | – | – | ✓ (assigned, active projects) |
+| Attendance records | all | all | own |
+| Users (add, edit role/status, reset password) | ✓ | – | – |
+| Website enquiries | ✓ | – | – |
 
 ## 6. Check
 
@@ -112,9 +153,9 @@ must choose their own password on first sign-in. **Reset Password** issues a new
 
 ## Notes
 
-- The old WordPress site's `/login` contractor system stops working when the domain moves to
-  this build. The footer's **Contractor Login** now points to `/portal/`, and `/login`
-  redirects there. Existing contractor accounts are **not** migrated – add them in the portal.
+- The old site's `/login` now redirects to `/portal/` (footer: **Contractor Login**). With
+  option A every existing account, project, assignment, file record, attendance record and
+  enquiry is kept, and users sign in with their existing email and password.
 - Placeholders that still need client values (kept exactly as on the reference): NSW Builder
   Licence No. `[XXXXXX]`, ABN `[XX XXX XXX XXX]`, some stats, extra Google reviews, director
   photos, and the price-estimator rates (`RATES` at the top of `initMain()` in

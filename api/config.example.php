@@ -35,6 +35,16 @@ return [
         ],
     ],
 
+    // Portal file uploads (project plans, completion files, check-out photos). Must NOT be
+    // web-accessible: the default api/storage/uploads is blocked by .htaccess. Better: a folder
+    // outside public_html, e.g. '/home/u000000000/domains/scarlethomes.com.au/storage/uploads'.
+    // Copy the old site's storage/app/public/* here to keep existing attachments.
+    'uploads_dir'   => null,
+    'max_upload_mb' => 20,
+
+    // Dates shown/recorded for bookings (booked_on, worked_on, completed_on)
+    'timezone' => 'Australia/Sydney',
+
     'enquiry' => [
         'max_per_hour_per_ip' => 5,
     ],

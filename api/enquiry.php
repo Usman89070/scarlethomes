@@ -50,7 +50,7 @@ if ($invalid) {
 // Per-IP rate limit
 $ip = ip_hash();
 $max = (int)(cfg('enquiry.max_per_hour_per_ip') ?: 5);
-$st = db()->prepare('SELECT COUNT(*) FROM enquiries WHERE ip_hash = ? AND created_at > (UTC_TIMESTAMP() - INTERVAL 1 HOUR)');
+$st = db()->prepare('SELECT COUNT(*) FROM contacts WHERE ip_hash = ? AND created_at > (UTC_TIMESTAMP() - INTERVAL 1 HOUR)');
 $st->execute([$ip]);
 if ((int)$st->fetchColumn() >= $max) {
     cf7('mail_failed', 'Too many enquiries from this connection. Please call us on 1800 727 538.', [], 429);
@@ -61,8 +61,9 @@ $ua = str_in(['u' => $_SERVER['HTTP_USER_AGENT'] ?? ''], 'u', 255);
 
 $id = null;
 try {
-    $st = db()->prepare('INSERT INTO enquiries (name, phone, email, suburb, service, message, page_url, ip_hash, user_agent) VALUES (?,?,?,?,?,?,?,?,?)');
-    $st->execute([$name, $phone, $email, $suburb, $service, $message, $page, $ip, $ua]);
+    // table `contacts` (shared with the old site's enquiries); topic = "What would you like to build?"
+    $st = db()->prepare('INSERT INTO contacts (name, phone, email, topic, message, suburb, page_url, ip_hash, user_agent, created_at, updated_at) VALUES (?,?,?,?,?,?,?,?,?,?,?)');
+    $st->execute([$name, $phone, $email, $service ?: 'Website enquiry', $message, $suburb, $page, $ip, $ua, now_utc(), now_utc()]);
     $id = (int)db()->lastInsertId();
 } catch (Throwable $e) {
     error_log('[scarlet api] enquiry insert failed: ' . $e->getMessage());
@@ -75,7 +76,7 @@ $body = "New enquiry from the Scarlet Homes website\n\n"
 $sent = send_mail((string)cfg('mail.to'), 'Website enquiry: ' . $name . ($service ? " ($service)" : ''), $body, $email);
 
 if ($id) {
-    db()->prepare('UPDATE enquiries SET mail_status = ? WHERE id = ?')->execute([$sent ? 'sent' : 'failed', $id]);
+    db()->prepare('UPDATE contacts SET mail_status = ? WHERE id = ?')->execute([$sent ? 'sent' : 'failed', $id]);
 }
 if (!$id && !$sent) {
     cf7('mail_failed', 'There was an error trying to send your message. Please try again later.', [], 500);
