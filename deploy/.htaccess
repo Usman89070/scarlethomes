@@ -1,0 +1,84 @@
+# Scarlet Homes - public_html/.htaccess (Hostinger / Apache + LiteSpeed)
+# Canonical host: https://scarlethomes.com.au  (non-www). To prefer www instead, swap the
+# two "canonical host" rules below and update SITE_URL in web/lib/site.ts.
+
+Options -Indexes -MultiViews
+DirectoryIndex index.html index.php
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # --- force HTTPS + canonical host (one hop)
+  RewriteCond %{HTTPS} !=on [OR]
+  RewriteCond %{HTTP_HOST} ^www\. [NC]
+  RewriteRule ^ https://scarlethomes.com.au%{REQUEST_URI} [L,R=301,NE]
+
+  # --- old WordPress contractor login -> new portal
+  RewriteRule ^login/?$ /portal/ [L,R=301]
+
+  # --- block sensitive files anywhere
+  RewriteRule (^|/)\.(?!well-known/) - [F,L]
+  RewriteRule \.(sql|md|log|bak|sh|lock|ini|env)$ - [F,L,NC]
+  RewriteRule ^api/(config|config\.example)\.php$ - [F,L,NC]
+  RewriteRule ^api/(lib|storage)(/|$) - [F,L,NC]
+  # one-time admin setup: blocked by default. Comment this line out only while you run it
+  # over the web, then delete public_html/api/setup and restore the line.
+  RewriteRule ^api/setup(/|$) - [F,L,NC]
+
+  # --- trailing slash: /about -> /about/ (static export uses folder/index.html)
+  RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{1,5}$
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^(.*[^/])$ /$1/ [L,R=301]
+</IfModule>
+
+# --- security headers
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+  # Next.js inlines its bootstrap scripts, hence 'unsafe-inline' for scripts and styles.
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://i.ytimg.com; font-src 'self'; connect-src 'self'; frame-src https://www.youtube-nocookie.com https://maps.google.com https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests"
+  Header unset X-Powered-By
+</IfModule>
+
+# --- caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 hour"
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType application/json "access plus 0 seconds"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/x-icon "access plus 30 days"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/xml "access plus 1 day"
+</IfModule>
+<IfModule mod_headers.c>
+  # CSS/JS/fonts only exist under /_next/static/ with content-hashed names -> immutable
+  <FilesMatch "\.(css|js|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(webp|jpe?g|png|ico)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+  <FilesMatch "\.(html|xml|txt)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+  # /api responses set "Cache-Control: no-store" themselves
+</IfModule>
+
+# --- compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml application/xml application/javascript application/json image/svg+xml image/x-icon
+</IfModule>
+
+AddType image/webp .webp
+AddType font/woff2 .woff2
+AddDefaultCharset utf-8
