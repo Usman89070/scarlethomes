@@ -12,8 +12,8 @@ public_html/
   _next/  images/  about/  contact/  portal/  ...   <- contents of web/out
   api/
     config.php         <- you create this (never commit it)
-    enquiry.php auth.php me.php admin.php
-    lib/  setup/  .htaccess
+    enquiry.php auth.php me.php users.php projects.php files.php attendance.php enquiries.php
+    lib/  setup/  storage/  .htaccess
 ```
 
 ## 1. Database
