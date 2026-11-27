@@ -1,0 +1,11 @@
+node_modules/
+/web/out/
+/web/.next/
+/web/next-env.d.ts
+/api/config.php
+/api/storage/
+.env*
+!.env.example
+*.log
+.DS_Store
+/screens/

@@ -1,0 +1,1847 @@
+{
+  "/": {
+    "slug": "index",
+    "title": "Custom Home Builders Sydney | Scarlet Homes",
+    "description": "Sydney custom home builder for duplexes, knockdown rebuilds, new homes and granny flats. Fixed-price, director-led builds. Book a free consultation.",
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "HomeAndConstructionBusiness",
+            "name": "Scarlet Homes",
+            "url": "https://scarlethomes.com.au/",
+            "telephone": "1800 727 538",
+            "email": "info@scarlethomes.com.au",
+            "logo": "https://scarlethomes.com.au/wp-content/uploads/2026/11/scarlet-homes-logo.png",
+            "image": "https://scarlethomes.com.au/wp-content/uploads/2026/11/scarlet-homes-hero-royal-delight.jpg",
+            "sameAs": [
+              "https://www.facebook.com/scarlethomes.au",
+              "https://www.instagram.com/scarlet.homes/",
+              "https://www.youtube.com/@ScarletHomes-yy4no"
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "43A Florence Street",
+              "postalCode": "2077",
+              "addressLocality": "Hornsby",
+              "addressRegion": "NSW",
+              "addressCountry": "AU"
+            },
+            "areaServed": "Greater Sydney"
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How much does it cost to build a house in Sydney?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It depends on size, storeys, finishes and your site. Use our estimator for a quick guide, then book a free consultation for a fixed-price quote."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I build a duplex on my block?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It depends on your zoning, lot size and frontage. Many Sydney blocks qualify for a fast-track complying development (CDC) approval. We check your block for free."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What's the difference between CDC and DA approval?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A Complying Development Certificate (CDC) is a faster approval for designs that meet set rules. A Development Application (DA) goes through council and suits more complex designs. We advise which fits your project and manage either."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is a knockdown rebuild cheaper than renovating?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Often, yes, for older homes that need major work. You get a new home built to current standards, with no hidden structural surprises from the old house."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need council approval for a granny flat?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Many granny flats in NSW can be approved as complying development if the lot meets size and setback rules. We confirm this during your free consultation."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long does it take to build a new home?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Timeframes depend on the design and approvals. We give you a clear schedule before construction starts."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "yoast_jsonld": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/",
+          "name": "Custom Home Builders Sydney | Scarlet Homes",
+          "isPartOf": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website"
+          },
+          "datePublished": "2026-11-25T11:46:29+00:00",
+          "dateModified": "2026-11-27T07:20:35+00:00",
+          "description": "Sydney custom home builder for duplexes, knockdown rebuilds, new homes and granny flats. Fixed-price, director-led builds. Book a free consultation.",
+          "breadcrumb": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://gleaming-gold-raccoon-58.hostingersite.com/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/",
+          "name": "Scarlet Homes",
+          "description": "Custom Home Builders Sydney",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://gleaming-gold-raccoon-58.hostingersite.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en-US"
+        }
+      ]
+    }
+  },
+  "/duplex-builders-sydney/": {
+    "slug": "duplex-builders-sydney",
+    "title": "Duplex Builders Sydney | Scarlet Homes",
+    "description": "Build a duplex in Sydney with Scarlet Homes. Design, CDC or DA approval and construction under one roof, on a fixed-price contract. Free block check.",
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://scarlethomes.com.au/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Duplex Builders Sydney",
+                "item": "https://scarlethomes.com.au/duplex-builders-sydney/"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Can I build a duplex on my block?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It depends on your zoning, lot size and frontage. Many Sydney blocks qualify for a fast-track complying development (CDC) approval. We check your block for free."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What's the difference between CDC and DA approval?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A Complying Development Certificate (CDC) is a faster approval for designs that meet set rules. A Development Application (DA) goes through council and suits more complex designs. We advise which fits your project and manage either."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does it cost to build a duplex in Sydney?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It depends on size, finishes and your site. Use our estimator for a quick guide, then book a free consultation for a detailed, fixed-price quote."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I live in one side and rent or sell the other?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Many clients live in one home and rent or sell the other. We design both sides around your plans."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you build double-storey duplexes?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We build single and double-storey duplexes in Box, French, Modern Contemporary and Traditional Full Brick styles."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "Service",
+            "name": "Duplex construction",
+            "serviceType": "Duplex construction",
+            "areaServed": "Greater Sydney",
+            "provider": {
+              "@type": "HomeAndConstructionBusiness",
+              "name": "Scarlet Homes",
+              "telephone": "1800 727 538",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "43A Florence Street",
+                "addressLocality": "Hornsby",
+                "addressRegion": "NSW",
+                "postalCode": "2077",
+                "addressCountry": "AU"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "yoast_jsonld": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/duplex-builders-sydney/",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/duplex-builders-sydney/",
+          "name": "Duplex Builders Sydney | Scarlet Homes",
+          "isPartOf": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website"
+          },
+          "datePublished": "2026-11-25T12:50:47+00:00",
+          "dateModified": "2026-11-27T06:59:28+00:00",
+          "description": "Build a duplex in Sydney with Scarlet Homes. Design, CDC or DA approval and construction under one roof, on a fixed-price contract. Free block check.",
+          "breadcrumb": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/duplex-builders-sydney/#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://gleaming-gold-raccoon-58.hostingersite.com/duplex-builders-sydney/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/duplex-builders-sydney/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://gleaming-gold-raccoon-58.hostingersite.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Duplex Builders Sydney"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/",
+          "name": "Scarlet Homes",
+          "description": "Custom Home Builders Sydney",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://gleaming-gold-raccoon-58.hostingersite.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en-US"
+        }
+      ]
+    }
+  },
+  "/knockdown-rebuild-sydney/": {
+    "slug": "knockdown-rebuild-sydney",
+    "title": "Knockdown Rebuild Sydney | Scarlet Homes",
+    "description": "Love your street but not your house? Scarlet Homes manages demolition, approvals and construction of your new home. Fixed price. Free consultation.",
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://scarlethomes.com.au/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Knockdown Rebuild Sydney",
+                "item": "https://scarlethomes.com.au/knockdown-rebuild-sydney/"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is a knockdown rebuild cheaper than renovating?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Often, yes, for older homes that need major work. You get a new home built to current standards, with no hidden structural surprises from the old house."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need approval to demolish my house?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Demolition needs approval, which can often be included in a CDC or DA. We manage it as part of your build."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where will I live during the build?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Most clients rent nearby or stay with family. We give you a clear schedule up front so you can plan ahead."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long does a knockdown rebuild take?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Timeframes depend on demolition, design and approvals. We give you a clear schedule before work starts."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I build a duplex instead of a single home?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Often, yes, if your block qualifies. We check this for free during your consultation."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "Service",
+            "name": "Knockdown rebuild",
+            "serviceType": "Knockdown rebuild",
+            "areaServed": "Greater Sydney",
+            "provider": {
+              "@type": "HomeAndConstructionBusiness",
+              "name": "Scarlet Homes",
+              "telephone": "1800 727 538",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "43A Florence Street",
+                "addressLocality": "Hornsby",
+                "addressRegion": "NSW",
+                "postalCode": "2077",
+                "addressCountry": "AU"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "yoast_jsonld": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/knockdown-rebuild-sydney/",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/knockdown-rebuild-sydney/",
+          "name": "Knockdown Rebuild Sydney | Scarlet Homes",
+          "isPartOf": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website"
+          },
+          "datePublished": "2026-11-25T12:50:48+00:00",
+          "dateModified": "2026-11-27T06:59:45+00:00",
+          "description": "Love your street but not your house? Scarlet Homes manages demolition, approvals and construction of your new home. Fixed price. Free consultation.",
+          "breadcrumb": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/knockdown-rebuild-sydney/#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://gleaming-gold-raccoon-58.hostingersite.com/knockdown-rebuild-sydney/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/knockdown-rebuild-sydney/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://gleaming-gold-raccoon-58.hostingersite.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Knockdown Rebuild Sydney"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/",
+          "name": "Scarlet Homes",
+          "description": "Custom Home Builders Sydney",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://gleaming-gold-raccoon-58.hostingersite.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en-US"
+        }
+      ]
+    }
+  },
+  "/new-home-builders-sydney/": {
+    "slug": "new-home-builders-sydney",
+    "title": "New Home Builders Sydney | Scarlet Homes",
+    "description": "Single and double-storey custom homes in Box, French, Modern and Full Brick styles. Fixed-price contracts with full inclusions. Free consultation.",
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://scarlethomes.com.au/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "New Home Builders Sydney",
+                "item": "https://scarlethomes.com.au/new-home-builders-sydney/"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How much does it cost to build a house in Sydney?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It depends on size, storeys, finishes and your site. Use our estimator for a quick guide, then book a free consultation for a fixed-price quote."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long does it take to build a new home?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Timeframes depend on the design and approvals. We give you a clear schedule before construction starts."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I change one of your designs?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Every home is personalised. Change the layout, facade or finishes until it feels right for your family."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you build on narrow blocks?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We have single and double-storey designs for a range of frontages, including narrower Sydney lots."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is included in the price?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Your fixed-price contract lists our full inclusions. Choose from our Freedom, Standard, Premium (turnkey) or BYO series."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "Service",
+            "name": "New home construction",
+            "serviceType": "New home construction",
+            "areaServed": "Greater Sydney",
+            "provider": {
+              "@type": "HomeAndConstructionBusiness",
+              "name": "Scarlet Homes",
+              "telephone": "1800 727 538",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "43A Florence Street",
+                "addressLocality": "Hornsby",
+                "addressRegion": "NSW",
+                "postalCode": "2077",
+                "addressCountry": "AU"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "yoast_jsonld": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/new-home-builders-sydney/",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/new-home-builders-sydney/",
+          "name": "New Home Builders Sydney | Scarlet Homes",
+          "isPartOf": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website"
+          },
+          "datePublished": "2026-11-25T12:50:49+00:00",
+          "dateModified": "2026-11-27T07:18:49+00:00",
+          "description": "Single and double-storey custom homes in Box, French, Modern and Full Brick styles. Fixed-price contracts with full inclusions. Free consultation.",
+          "breadcrumb": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/new-home-builders-sydney/#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://gleaming-gold-raccoon-58.hostingersite.com/new-home-builders-sydney/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/new-home-builders-sydney/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://gleaming-gold-raccoon-58.hostingersite.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "New Home Builders Sydney"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/",
+          "name": "Scarlet Homes",
+          "description": "Custom Home Builders Sydney",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://gleaming-gold-raccoon-58.hostingersite.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en-US"
+        }
+      ]
+    }
+  },
+  "/granny-flat-builders-sydney/": {
+    "slug": "granny-flat-builders-sydney",
+    "title": "Granny Flat Builders Sydney | Scarlet Homes",
+    "description": "Add a self-contained granny flat for family or rental income. Scarlet Homes handles design, approval and construction. Fixed price, free site check.",
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://scarlethomes.com.au/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Granny Flat Builders Sydney",
+                "item": "https://scarlethomes.com.au/granny-flat-builders-sydney/"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Do I need council approval for a granny flat?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Many granny flats in NSW can be approved as complying development if the lot meets size and setback rules. We confirm this during your free consultation."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How big can a granny flat be?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "In NSW, a granny flat (secondary dwelling) is generally limited to 60 m² of internal floor area, depending on your council's rules. We confirm what your lot allows."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I rent out my granny flat?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Granny flats in NSW can generally be rented out. We recommend checking any council conditions that apply to your property."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long does it take to build a granny flat?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Timeframes depend on the design and approvals. We give you a clear schedule before construction starts."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "Service",
+            "name": "Granny flat construction",
+            "serviceType": "Granny flat construction",
+            "areaServed": "Greater Sydney",
+            "provider": {
+              "@type": "HomeAndConstructionBusiness",
+              "name": "Scarlet Homes",
+              "telephone": "1800 727 538",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "43A Florence Street",
+                "addressLocality": "Hornsby",
+                "addressRegion": "NSW",
+                "postalCode": "2077",
+                "addressCountry": "AU"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "yoast_jsonld": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/granny-flat-builders-sydney/",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/granny-flat-builders-sydney/",
+          "name": "Granny Flat Builders Sydney | Scarlet Homes",
+          "isPartOf": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website"
+          },
+          "datePublished": "2026-11-25T12:50:49+00:00",
+          "dateModified": "2026-11-27T07:00:13+00:00",
+          "description": "Add a self-contained granny flat for family or rental income. Scarlet Homes handles design, approval and construction. Fixed price, free site check.",
+          "breadcrumb": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/granny-flat-builders-sydney/#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://gleaming-gold-raccoon-58.hostingersite.com/granny-flat-builders-sydney/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/granny-flat-builders-sydney/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://gleaming-gold-raccoon-58.hostingersite.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Granny Flat Builders Sydney"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/",
+          "name": "Scarlet Homes",
+          "description": "Custom Home Builders Sydney",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://gleaming-gold-raccoon-58.hostingersite.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en-US"
+        }
+      ]
+    }
+  },
+  "/projects/": {
+    "slug": "projects",
+    "title": "Our Projects | Custom Homes Sydney | Scarlet Homes",
+    "description": "Explore duplexes, knockdown rebuilds and new homes by Scarlet Homes across Sydney, in Box, French, Modern Contemporary and Full Brick designs.",
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://scarlethomes.com.au/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Projects",
+                "item": "https://scarlethomes.com.au/projects/"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "yoast_jsonld": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/projects/",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/projects/",
+          "name": "Our Projects | Custom Homes Sydney | Scarlet Homes",
+          "isPartOf": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/projects/#primaryimage"
+          },
+          "image": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/projects/#primaryimage"
+          },
+          "thumbnailUrl": "https://i0.wp.com/i.ytimg.com/vi/F9fDXgjGJI4/hqdefault.jpg?ssl=1",
+          "datePublished": "2026-11-25T12:50:50+00:00",
+          "dateModified": "2026-11-27T07:18:34+00:00",
+          "description": "Explore duplexes, knockdown rebuilds and new homes by Scarlet Homes across Sydney, in Box, French, Modern Contemporary and Full Brick designs.",
+          "breadcrumb": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/projects/#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://gleaming-gold-raccoon-58.hostingersite.com/projects/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "ImageObject",
+          "inLanguage": "en-US",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/projects/#primaryimage",
+          "url": "https://i0.wp.com/i.ytimg.com/vi/F9fDXgjGJI4/hqdefault.jpg?ssl=1",
+          "contentUrl": "https://i0.wp.com/i.ytimg.com/vi/F9fDXgjGJI4/hqdefault.jpg?ssl=1"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/projects/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://gleaming-gold-raccoon-58.hostingersite.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Projects"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/",
+          "name": "Scarlet Homes",
+          "description": "Custom Home Builders Sydney",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://gleaming-gold-raccoon-58.hostingersite.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en-US"
+        }
+      ]
+    }
+  },
+  "/about/": {
+    "slug": "about",
+    "title": "About Scarlet Homes | Sydney Custom Home Builder",
+    "description": "Meet Scarlet Homes, a Hornsby-based builder led by directors Bharat and Pradip, building custom Sydney homes with transparency and quality.",
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://scarlethomes.com.au/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "About Us",
+                "item": "https://scarlethomes.com.au/about/"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "yoast_jsonld": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/about/",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/about/",
+          "name": "About Scarlet Homes | Sydney Custom Home Builder",
+          "isPartOf": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website"
+          },
+          "datePublished": "2026-11-25T12:50:50+00:00",
+          "dateModified": "2026-11-27T07:00:43+00:00",
+          "description": "Meet Scarlet Homes, a Hornsby-based builder led by directors Bharat and Pradip, building custom Sydney homes with transparency and quality.",
+          "breadcrumb": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/about/#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://gleaming-gold-raccoon-58.hostingersite.com/about/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/about/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://gleaming-gold-raccoon-58.hostingersite.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "About Us"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/",
+          "name": "Scarlet Homes",
+          "description": "Custom Home Builders Sydney",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://gleaming-gold-raccoon-58.hostingersite.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en-US"
+        }
+      ]
+    }
+  },
+  "/contact/": {
+    "slug": "contact",
+    "title": "Contact Scarlet Homes | Free Consultation Sydney",
+    "description": "Book a free consultation with Scarlet Homes. Call 1800 727 538, email info@scarlethomes.com.au or visit us at 43A Florence Street, Hornsby NSW.",
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://scarlethomes.com.au/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Contact",
+                "item": "https://scarlethomes.com.au/contact/"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "yoast_jsonld": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/contact/",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/contact/",
+          "name": "Contact Scarlet Homes | Free Consultation Sydney",
+          "isPartOf": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website"
+          },
+          "datePublished": "2026-11-25T12:50:51+00:00",
+          "dateModified": "2026-11-27T07:22:44+00:00",
+          "description": "Book a free consultation with Scarlet Homes. Call 1800 727 538, email info@scarlethomes.com.au or visit us at 43A Florence Street, Hornsby NSW.",
+          "breadcrumb": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/contact/#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://gleaming-gold-raccoon-58.hostingersite.com/contact/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/contact/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://gleaming-gold-raccoon-58.hostingersite.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Contact Us"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/",
+          "name": "Scarlet Homes",
+          "description": "Custom Home Builders Sydney",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://gleaming-gold-raccoon-58.hostingersite.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en-US"
+        }
+      ]
+    }
+  },
+  "/service-areas/": {
+    "slug": "service-areas",
+    "title": "Service Areas | Home Builders Across Sydney | Scarlet Homes",
+    "description": "Scarlet Homes builds custom homes, duplexes, knockdown rebuilds and granny flats across Hornsby, the Hills District, Parramatta and Leppington. Free site check.",
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://scarlethomes.com.au/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Service Areas",
+                "item": "https://scarlethomes.com.au/service-areas/"
+              }
+            ]
+          },
+          {
+            "@type": "HomeAndConstructionBusiness",
+            "name": "Scarlet Homes",
+            "telephone": "1800 727 538",
+            "email": "info@scarlethomes.com.au",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "43A Florence Street",
+              "addressLocality": "Hornsby",
+              "addressRegion": "NSW",
+              "postalCode": "2077",
+              "addressCountry": "AU"
+            },
+            "areaServed": [
+              "Greater Sydney",
+              "Hornsby",
+              "Upper North Shore",
+              "The Hills District",
+              "Parramatta",
+              "Western Sydney",
+              "Leppington",
+              "South West Sydney"
+            ]
+          }
+        ]
+      }
+    ],
+    "yoast_jsonld": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/service-areas/",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/service-areas/",
+          "name": "Service Areas | Home Builders Across Sydney | Scarlet Homes",
+          "isPartOf": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website"
+          },
+          "datePublished": "2026-11-26T12:54:20+00:00",
+          "dateModified": "2026-11-27T07:00:56+00:00",
+          "description": "Scarlet Homes builds custom homes, duplexes, knockdown rebuilds and granny flats across Hornsby, the Hills District, Parramatta and Leppington. Free site check.",
+          "breadcrumb": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/service-areas/#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://gleaming-gold-raccoon-58.hostingersite.com/service-areas/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/service-areas/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://gleaming-gold-raccoon-58.hostingersite.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Service Areas"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/",
+          "name": "Scarlet Homes",
+          "description": "Custom Home Builders Sydney",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://gleaming-gold-raccoon-58.hostingersite.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en-US"
+        }
+      ]
+    }
+  },
+  "/home-builders-hornsby/": {
+    "slug": "home-builders-hornsby",
+    "title": "Home Builders Hornsby | Custom Homes & Duplexes | Scarlet Homes",
+    "description": "Local Hornsby home builder at 43A Florence St. Custom homes, duplexes, knockdown rebuilds and granny flats across the Upper North Shore. Call 1800 727 538.",
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://scarlethomes.com.au/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Service Areas",
+                "item": "https://scarlethomes.com.au/service-areas/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Hornsby",
+                "item": "https://scarlethomes.com.au/home-builders-hornsby/"
+              }
+            ]
+          },
+          {
+            "@type": "HomeAndConstructionBusiness",
+            "name": "Scarlet Homes",
+            "telephone": "1800 727 538",
+            "email": "info@scarlethomes.com.au",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "43A Florence Street",
+              "addressLocality": "Hornsby",
+              "addressRegion": "NSW",
+              "postalCode": "2077",
+              "addressCountry": "AU"
+            },
+            "areaServed": [
+              "Hornsby",
+              "Upper North Shore",
+              "Northern Suburbs"
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Do you build in Hornsby and the Upper North Shore?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Our office is at 43A Florence Street, Hornsby, and we build throughout Hornsby, the Upper North Shore and the Northern Suburbs."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I build a duplex on my block in Hornsby?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It depends on your zoning, lot size and frontage under Hornsby Shire Council's planning controls and the NSW housing codes. We check your block for free and explain your options."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you handle approvals with Hornsby Shire Council?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We manage your approval from start to finish, whether that is a complying development certificate (CDC) through a private certifier or a development application (DA) with council."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does it cost to build a home in Hornsby?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It depends on size, storeys, finishes and your site. Use our estimator for a quick guide, then book a free consultation for a fixed-price quote."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "yoast_jsonld": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/home-builders-hornsby/",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/home-builders-hornsby/",
+          "name": "Home Builders Hornsby | Custom Homes & Duplexes | Scarlet Homes",
+          "isPartOf": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website"
+          },
+          "datePublished": "2026-11-26T12:54:20+00:00",
+          "dateModified": "2026-11-27T07:01:12+00:00",
+          "description": "Local Hornsby home builder at 43A Florence St. Custom homes, duplexes, knockdown rebuilds and granny flats across the Upper North Shore. Call 1800 727 538.",
+          "breadcrumb": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/home-builders-hornsby/#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://gleaming-gold-raccoon-58.hostingersite.com/home-builders-hornsby/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/home-builders-hornsby/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://gleaming-gold-raccoon-58.hostingersite.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Home Builders Hornsby"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/",
+          "name": "Scarlet Homes",
+          "description": "Custom Home Builders Sydney",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://gleaming-gold-raccoon-58.hostingersite.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en-US"
+        }
+      ]
+    }
+  },
+  "/home-builders-hills-district/": {
+    "slug": "home-builders-hills-district",
+    "title": "Home Builders Hills District | Castle Hill to Box Hill | Scarlet Homes",
+    "description": "Custom homes, duplexes, knockdown rebuilds and granny flats across the Hills District, including Castle Hill, Kellyville and Rouse Hill. Free site check.",
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://scarlethomes.com.au/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Service Areas",
+                "item": "https://scarlethomes.com.au/service-areas/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Hills District",
+                "item": "https://scarlethomes.com.au/home-builders-hills-district/"
+              }
+            ]
+          },
+          {
+            "@type": "HomeAndConstructionBusiness",
+            "name": "Scarlet Homes",
+            "telephone": "1800 727 538",
+            "email": "info@scarlethomes.com.au",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "43A Florence Street",
+              "addressLocality": "Hornsby",
+              "addressRegion": "NSW",
+              "postalCode": "2077",
+              "addressCountry": "AU"
+            },
+            "areaServed": [
+              "The Hills District",
+              "North West Sydney"
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Do you build in the Hills District?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We build throughout The Hills District and North West Sydney, including Castle Hill, Kellyville, Rouse Hill and Box Hill."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I build a duplex on my block in the Hills District?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It depends on your zoning, lot size and frontage under The Hills Shire Council's planning controls and the NSW housing codes. We check your block for free and explain your options."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you handle approvals with The Hills Shire Council?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We manage your approval from start to finish, whether that is a complying development certificate (CDC) through a private certifier or a development application (DA) with council."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does it cost to build a home in the Hills District?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It depends on size, storeys, finishes and your site. Use our estimator for a quick guide, then book a free consultation for a fixed-price quote."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "yoast_jsonld": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/home-builders-hills-district/",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/home-builders-hills-district/",
+          "name": "Home Builders Hills District | Castle Hill to Box Hill | Scarlet Homes",
+          "isPartOf": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website"
+          },
+          "datePublished": "2026-11-26T12:54:20+00:00",
+          "dateModified": "2026-11-27T07:01:33+00:00",
+          "description": "Custom homes, duplexes, knockdown rebuilds and granny flats across the Hills District, including Castle Hill, Kellyville and Rouse Hill. Free site check.",
+          "breadcrumb": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/home-builders-hills-district/#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://gleaming-gold-raccoon-58.hostingersite.com/home-builders-hills-district/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/home-builders-hills-district/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://gleaming-gold-raccoon-58.hostingersite.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Home Builders Hills District"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/",
+          "name": "Scarlet Homes",
+          "description": "Custom Home Builders Sydney",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://gleaming-gold-raccoon-58.hostingersite.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en-US"
+        }
+      ]
+    }
+  },
+  "/home-builders-parramatta/": {
+    "slug": "home-builders-parramatta",
+    "title": "Home Builders Parramatta | Duplexes & Rebuilds | Scarlet Homes",
+    "description": "Build a duplex, knockdown rebuild, new home or granny flat in Parramatta and Western Sydney. Director-led builds and fixed-price contracts. Free site check.",
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://scarlethomes.com.au/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Service Areas",
+                "item": "https://scarlethomes.com.au/service-areas/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Parramatta",
+                "item": "https://scarlethomes.com.au/home-builders-parramatta/"
+              }
+            ]
+          },
+          {
+            "@type": "HomeAndConstructionBusiness",
+            "name": "Scarlet Homes",
+            "telephone": "1800 727 538",
+            "email": "info@scarlethomes.com.au",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "43A Florence Street",
+              "addressLocality": "Hornsby",
+              "addressRegion": "NSW",
+              "postalCode": "2077",
+              "addressCountry": "AU"
+            },
+            "areaServed": [
+              "Parramatta",
+              "Western Sydney"
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Do you build in Parramatta?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We build throughout Parramatta and Western Sydney, including Westmead, Northmead, Granville and Toongabbie."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I build a duplex on my block in Parramatta?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It depends on your zoning, lot size and frontage under your council's planning controls (City of Parramatta or Cumberland Council, depending on your suburb) and the NSW housing codes. We check your block for free."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you handle council approvals in Parramatta?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We manage your approval from start to finish, whether that is a complying development certificate (CDC) through a private certifier or a development application (DA) with council."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does it cost to build a home in Parramatta?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It depends on size, storeys, finishes and your site. Use our estimator for a quick guide, then book a free consultation for a fixed-price quote."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "yoast_jsonld": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/home-builders-parramatta/",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/home-builders-parramatta/",
+          "name": "Home Builders Parramatta | Duplexes & Rebuilds | Scarlet Homes",
+          "isPartOf": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website"
+          },
+          "datePublished": "2026-11-26T12:54:21+00:00",
+          "dateModified": "2026-11-27T07:01:56+00:00",
+          "description": "Build a duplex, knockdown rebuild, new home or granny flat in Parramatta and Western Sydney. Director-led builds and fixed-price contracts. Free site check.",
+          "breadcrumb": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/home-builders-parramatta/#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://gleaming-gold-raccoon-58.hostingersite.com/home-builders-parramatta/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/home-builders-parramatta/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://gleaming-gold-raccoon-58.hostingersite.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Home Builders Parramatta"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/",
+          "name": "Scarlet Homes",
+          "description": "Custom Home Builders Sydney",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://gleaming-gold-raccoon-58.hostingersite.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en-US"
+        }
+      ]
+    }
+  },
+  "/home-builders-leppington/": {
+    "slug": "home-builders-leppington",
+    "title": "Home Builders Leppington | New Homes & Duplexes | Scarlet Homes",
+    "description": "We build new homes, duplexes and granny flats in Leppington and South West Sydney, including homes on Gribbin Rd and Candling Rd. Free site check.",
+    "jsonld": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://scarlethomes.com.au/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Service Areas",
+                "item": "https://scarlethomes.com.au/service-areas/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Leppington",
+                "item": "https://scarlethomes.com.au/home-builders-leppington/"
+              }
+            ]
+          },
+          {
+            "@type": "HomeAndConstructionBusiness",
+            "name": "Scarlet Homes",
+            "telephone": "1800 727 538",
+            "email": "info@scarlethomes.com.au",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "43A Florence Street",
+              "addressLocality": "Hornsby",
+              "addressRegion": "NSW",
+              "postalCode": "2077",
+              "addressCountry": "AU"
+            },
+            "areaServed": [
+              "Leppington",
+              "South West Sydney"
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Do you build in Leppington?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We have built homes in Leppington, including on Gribbin Road and Candling Road, and we build throughout South West Sydney."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I build a duplex or granny flat in Leppington?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It depends on your zoning, lot size and frontage under your council's planning controls (Camden Council or Liverpool City Council, depending on your suburb) and the NSW housing codes. We check your block for free."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you handle council approvals in South West Sydney?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We manage your approval from start to finish, whether that is a complying development certificate (CDC) through a private certifier or a development application (DA) with council."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does it cost to build a home in Leppington?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It depends on size, storeys, finishes and your site. Use our estimator for a quick guide, then book a free consultation for a fixed-price quote."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "yoast_jsonld": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/home-builders-leppington/",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/home-builders-leppington/",
+          "name": "Home Builders Leppington | New Homes & Duplexes | Scarlet Homes",
+          "isPartOf": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website"
+          },
+          "datePublished": "2026-11-26T12:54:21+00:00",
+          "dateModified": "2026-11-27T07:02:14+00:00",
+          "description": "We build new homes, duplexes and granny flats in Leppington and South West Sydney, including homes on Gribbin Rd and Candling Rd. Free site check.",
+          "breadcrumb": {
+            "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/home-builders-leppington/#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://gleaming-gold-raccoon-58.hostingersite.com/home-builders-leppington/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/home-builders-leppington/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://gleaming-gold-raccoon-58.hostingersite.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Home Builders Leppington"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://gleaming-gold-raccoon-58.hostingersite.com/#website",
+          "url": "https://gleaming-gold-raccoon-58.hostingersite.com/",
+          "name": "Scarlet Homes",
+          "description": "Custom Home Builders Sydney",
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://gleaming-gold-raccoon-58.hostingersite.com/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en-US"
+        }
+      ]
+    }
+  }
+}
