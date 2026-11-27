@@ -93,7 +93,7 @@ function proxyApi(req, res) {
   req.pipe(up);
 }
 
-const server = http.createServer((req, res) => {
+function handle(req, res) {
   let pathname;
   try { pathname = decodeURIComponent(new URL(req.url, 'http://x').pathname); } catch { res.writeHead(400); return res.end(); }
   if (pathname.startsWith('/api/')) {
@@ -114,7 +114,20 @@ const server = http.createServer((req, res) => {
     if (!err && st.isFile()) return sendFile(req, res, file, 200);
     notFound(req, res);
   });
-});
+}
+
+// Express when installed (Hostinger detects the app as "Express"); plain Node http otherwise.
+let server;
+try {
+  const express = require('express');
+  const app = express();
+  app.disable('x-powered-by');
+  app.set('trust proxy', true);
+  app.use((req, res) => handle(req, res));
+  server = http.createServer(app);
+} catch {
+  server = http.createServer(handle);
+}
 
 if (!fs.existsSync(path.join(ROOT, 'index.html'))) {
   console.error('out/ is missing: run "npm run build" before "npm start".');

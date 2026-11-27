@@ -175,14 +175,16 @@ is set up as a Node.js app in hPanel.
    `db/migrate-from-old-site.sql`, or fresh `db/schema.sql`). Note the database name, user,
    password and **host** shown in hPanel → Databases.
 2. **Build the ZIP** (or use the one you were given): `./deploy/package-node.sh` →
-   `deploy/dist/scarlethomes-nodejs.zip` (the `web/` source with `package.json` at the root;
-   no `node_modules`, no `.env`).
-3. hPanel → **Websites → Add website → Node.js app** (or the Node.js app's deploy page) →
-   **Upload your files** → choose `scarlethomes-nodejs.zip`. Hostinger detects **Next.js**.
-4. Build settings (check them on the settings step):
-   - Node.js version: **20 or 22**
-   - Install: `npm install` · Build: `npm run build` · Start: `npm start`
-     (runs `node server.js`, which serves `out/` and the API)
+   `deploy/dist/scarlethomes-nodejs.zip`. The website is **prebuilt** inside it (`out/`), so
+   Hostinger does no heavy build: it only installs 5 small packages (Express, mysql2,
+   bcryptjs, busboy, nodemailer) and starts `node server.js`.
+3. hPanel → **Node.js app** → **Upload your files** → choose `scarlethomes-nodejs.zip`.
+   Hostinger detects **Express**.
+4. Settings: Node.js **18, 20 or 22** · Install `npm install` · Build `npm run build` (only checks
+   the prebuilt site is there) · Start `npm start` / entry file `server.js`.
+   The website works right away **without any environment variables**; until the database
+   variables are added the contact form and portal show "Something went wrong / Service
+   unavailable".
 5. **Environment variables** (settings step, or later in the app's settings): every variable in
    `web/.env.example` – at least `DB_HOST`, `DB_NAME`, `DB_USER`, `DB_PASS`, `SITE_URL`,
    `APP_SECRET`, the `SMTP_*`/`MAIL_*` values and `UPLOADS_DIR`.
