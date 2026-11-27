@@ -30,8 +30,14 @@ tools/       extraction/generation scripts, comparison and test scripts, PHP dev
   dropdowns, mobile menu), `components/Footer.tsx` and `components/FixedUI.tsx` (call button,
   progress bar, back-to-top, cursor, mobile bar, lightbox) once for every page.
 - **Behaviour** – the reference scripts are in `web/lib/legacy/site.js` (and `pages.js` for
-  page-only scripts), run once after hydration by `components/SiteScripts.tsx`. They move the
-  fixed UI into a body-level portal, exactly as on the reference.
+  page-only scripts). They move the fixed UI into a body-level portal, exactly as on the
+  reference. In `npm run dev` they run after hydration via `components/SiteScripts.tsx`. In the
+  production build the marketing pages need no React on the client, so `scripts/postbuild.mjs`
+  removes the Next.js runtime from them and loads the same scripts as one deferred,
+  content-hashed `/js/site.<hash>.js` (built by `scripts/build-site-js.mjs`) – the reference's
+  timing, and much faster pages. `/portal/` keeps the React runtime. **If you add React
+  interactivity (state, effects) to a marketing page, add its folder to `KEEP_RUNTIME` in
+  `web/scripts/postbuild.mjs`.**
 - **Images** – originals in `web/public/images/`; `npm run images` (run automatically by
   `dev`/`build`) creates WebP at 480/960/1600 px and `web/data/images.json`; `components/Img.tsx`
   renders `<picture>` with WebP + original fallback, width/height, lazy loading and
