@@ -18,10 +18,28 @@ if (fs.existsSync(envFile)) {
   }
 }
 
+const os = require('os');
 const e = (k, d = '') => (process.env[k] !== undefined && process.env[k] !== '' ? process.env[k] : d);
 const bool = (k, d) => { const v = e(k, d ? '1' : '0').toLowerCase(); return v === '1' || v === 'true' || v === 'yes'; };
 
+/*
+ * Persistent data folder (SQLite database + uploaded files) OUTSIDE the app folder, so a
+ * redeploy never deletes it: DATA_DIR, else ~/scarlethomes-data, else ./data as a last resort.
+ */
+function dataDir() {
+  const appDir = path.join(__dirname, '..', '..');
+  for (const d of [process.env.DATA_DIR, path.join(os.homedir() || appDir, 'scarlethomes-data'), path.join(appDir, 'data')]) {
+    if (!d) continue;
+    try { fs.mkdirSync(d, { recursive: true }); fs.accessSync(d, fs.constants.W_OK); return path.resolve(d); } catch { /* next */ }
+  }
+  return path.join(appDir, 'data');
+}
+const DATA_DIR = dataDir();
+
 module.exports = {
+  dataDir: DATA_DIR,
+  // MySQL when DB_NAME is set; otherwise a SQLite file (no setup needed)
+  sqliteFile: path.resolve(e('SQLITE_FILE', path.join(DATA_DIR, 'scarlethomes.sqlite'))),
   db: { host: e('DB_HOST', 'localhost'), port: Number(e('DB_PORT', '3306')), name: e('DB_NAME'), user: e('DB_USER'), pass: e('DB_PASS') },
   siteUrl: e('SITE_URL', 'https://scarlethomes.com.au').replace(/\/$/, ''),
   appSecret: e('APP_SECRET'),
@@ -31,7 +49,7 @@ module.exports = {
     fromName: e('MAIL_FROM_NAME', 'Scarlet Homes Website'),
     smtp: { host: e('SMTP_HOST', 'smtp.hostinger.com'), port: Number(e('SMTP_PORT', '465')), secure: e('SMTP_ENCRYPTION', 'ssl') === 'ssl', user: e('SMTP_USER'), pass: e('SMTP_PASS') },
   },
-  uploadsDir: path.resolve(e('UPLOADS_DIR', path.join(__dirname, '..', '..', 'storage', 'uploads'))),
+  uploadsDir: path.resolve(e('UPLOADS_DIR', path.join(DATA_DIR, 'uploads'))),
   maxUploadMb: Number(e('MAX_UPLOAD_MB', '20')),
   timezone: e('TIMEZONE', 'Australia/Sydney'),
   enquiryMaxPerHour: Number(e('ENQUIRY_MAX_PER_HOUR', '5')),

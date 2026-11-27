@@ -37,4 +37,4 @@ async function tx(fn) {
   } finally { c.release(); }
 }
 
-module.exports = { q, one, val, tx, getPool };
+module.exports = cfg.db.name ? { q, one, val, tx, getPool, kind: 'mysql' } : { ...require('./sqlite'), kind: 'sqlite' };

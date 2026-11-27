@@ -182,9 +182,14 @@ is set up as a Node.js app in hPanel.
    Hostinger detects **Express**.
 4. Settings: Node.js **18, 20 or 22** · Install `npm install` · Build `npm run build` (only checks
    the prebuilt site is there) · Start `npm start` / entry file `server.js`.
-   The website works right away **without any environment variables**; until the database
-   variables are added the contact form and portal show "Something went wrong / Service
-   unavailable".
+   Everything works right away **without any settings**: with no `DB_NAME` the API uses a
+   SQLite database file in `~/scarlethomes-data/` (outside the app folder, so redeploys keep
+   it; uploads go to `~/scarlethomes-data/uploads/`). Build the ZIP with
+   `OLD_DUMP=/path/to/scarleth_database.sql ./deploy/package-node.sh` to start that database
+   with the old site's users (existing passwords), projects, assignments, files list, logs,
+   attendance and enquiries. Emails go through the server's `sendmail` when no SMTP login is
+   set. To use MySQL instead, add the `DB_*` settings (step 5) - as environment variables or a
+   `.env` file next to `package.json` (works like PHP's config.php).
 5. **Environment variables** (settings step, or later in the app's settings): every variable in
    `web/.env.example` – at least `DB_HOST`, `DB_NAME`, `DB_USER`, `DB_PASS`, `SITE_URL`,
    `APP_SECRET`, the `SMTP_*`/`MAIL_*` values and `UPLOADS_DIR`.

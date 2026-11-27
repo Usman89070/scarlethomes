@@ -18,7 +18,7 @@ const ROOT = path.join(__dirname, 'out');
 const PORT = Number(process.env.PORT) || 3000;
 const cfg = require('./server/lib/config'); // also loads .env
 const API = process.env.API_ORIGIN ? new URL(process.env.API_ORIGIN) : null;
-const NODE_API = !API && !!cfg.db.name;
+const NODE_API = !API; // built-in API: MySQL when DB_NAME is set, else a SQLite file (no setup)
 const handleApi = NODE_API ? require('./server/api') : null;
 const SECRET = process.env.PROXY_SECRET || '';
 
@@ -135,5 +135,5 @@ if (!fs.existsSync(path.join(ROOT, 'index.html'))) {
 }
 const ready = NODE_API ? require('./server/setup').startup() : Promise.resolve();
 ready.catch((e) => console.error('[setup] database not ready:', e.message)).finally(() => {
-  server.listen(PORT, () => console.log(`Scarlet Homes on port ${PORT} - API: ${NODE_API ? 'built-in (Node.js + MySQL)' : API ? 'proxy -> ' + API.origin : 'not configured'}`));
+  server.listen(PORT, () => console.log(`Scarlet Homes on port ${PORT} - API: ${NODE_API ? 'built-in (Node.js + ' + (cfg.db.name ? 'MySQL' : 'SQLite ' + cfg.sqliteFile) + ')' : API ? 'proxy -> ' + API.origin : 'not configured'}`));
 });

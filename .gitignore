@@ -13,3 +13,5 @@ node_modules/
 /web/tsconfig.tsbuildinfo
 /web/public/js/site.js
 /deploy/dist/
+/web/data-seed/
+*.sqlite
