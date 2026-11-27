@@ -117,6 +117,7 @@ export default function ContactPage() {
           </button>
           <div className="sh-msg" role="status" aria-live="polite" />
           <p className="sh-fine">We'll only use your details to respond to your enquiry.</p>
+          <div aria-hidden="true" style={{ position: "absolute", left: "-10000px", width: "1px", height: "1px", overflow: "hidden" }}><label htmlFor="cf-w">Website</label><input id="cf-w" name="website" tabIndex={-1} autoComplete="off" /></div>
         </form>
       </div>
     </section>

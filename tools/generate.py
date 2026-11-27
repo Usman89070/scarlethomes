@@ -430,6 +430,15 @@ for slug in PAGES:
     parts = []
     for s in body:
         parts.append(emit(s, ctx, 2))
+    # spam honeypot for /api/enquiry.php (not on the reference; invisible, last child of the form)
+    for i, ptxt in enumerate(parts):
+        k = ptxt.find('id="sh-cform"')
+        if k >= 0:
+            e = ptxt.find('</form>', k)
+            hp = ('<div aria-hidden="true" style={{ position: "absolute", left: "-10000px", width: "1px", height: "1px", overflow: "hidden" }}>'
+                  '<label htmlFor="cf-w">Website</label><input id="cf-w" name="website" tabIndex={-1} autoComplete="off" /></div>\n')
+            line_start = ptxt.rfind('\n', 0, e) + 1
+            parts[i] = ptxt[:line_start] + ' ' * (e - line_start + 2) + hp + ptxt[line_start:]
     scripts = ctx.get('scripts', [])
     r = route(slug)
     seo_out[r]['image'] = ctx.get('first_img')

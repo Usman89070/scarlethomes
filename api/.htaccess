@@ -1,0 +1,8 @@
+# /api - only the public endpoints are reachable.
+Options -Indexes
+<IfModule mod_authz_core.c>
+  <FilesMatch "^(config\.php|config\.example\.php|.*\.sql|.*\.md|.*\.log)$">
+    Require all denied
+  </FilesMatch>
+</IfModule>
+RedirectMatch 404 ^/api/(lib|storage)(/|$)
