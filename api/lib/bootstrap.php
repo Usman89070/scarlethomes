@@ -73,7 +73,15 @@ set_exception_handler(function (Throwable $e) {
 
 function client_ip(): string
 {
-    // Hostinger passes the real client IP in REMOTE_ADDR. Do not trust X-Forwarded-For.
+    // Normally REMOTE_ADDR. When the site runs as a Node.js app (web/server.js) that forwards
+    // /api here, the visitor IP arrives in X-Forwarded-For - trusted only with the shared secret.
+    $secret = (string)cfg('proxy_secret');
+    if ($secret !== '' && hash_equals($secret, (string)($_SERVER['HTTP_X_SH_PROXY'] ?? ''))) {
+        $xff = trim(explode(',', (string)($_SERVER['HTTP_X_FORWARDED_FOR'] ?? ''))[0] ?? '');
+        $last = trim((string)(array_reverse(explode(',', (string)($_SERVER['HTTP_X_FORWARDED_FOR'] ?? '')))[0] ?? ''));
+        $ip = $last !== '' ? $last : $xff; // the address server.js itself saw (cannot be spoofed by the visitor)
+        if (filter_var($ip, FILTER_VALIDATE_IP)) return $ip;
+    }
     return $_SERVER['REMOTE_ADDR'] ?? '0.0.0.0';
 }
 

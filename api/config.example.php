@@ -61,6 +61,10 @@ return [
     // is a non-empty string AND no admin exists. Leave '' if you can use SSH (CLI mode).
     'setup_token' => '',
 
+    // Only when the website runs as a Node.js app (web/server.js, env PROXY_SECRET) and this
+    // API is on a separate PHP site: the same long random string as PROXY_SECRET. Otherwise ''.
+    'proxy_secret' => '',
+
     // Local development only: allow the Next.js dev server origin (e.g. 'http://localhost:3000').
     'dev_cors_origin' => '',
 

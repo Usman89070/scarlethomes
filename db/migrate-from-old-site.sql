@@ -78,3 +78,13 @@ TRUNCATE TABLE `sessions`;
 --   `site_configurations`, `sliders`, `stories`, `testimonials`,
 --   `cache`, `cache_locks`, `jobs`, `job_batches`, `failed_jobs`, `migrations`,
 --   `password_reset_tokens`, `sessions`;
+
+-- NEW: sessions for the Node.js version of the API (web/server; the PHP API uses PHP sessions)
+CREATE TABLE IF NOT EXISTS `portal_sessions` (
+  `id` char(64) NOT NULL,
+  `user_id` bigint UNSIGNED DEFAULT NULL,
+  `data` text NOT NULL,
+  `last_activity` int NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `portal_sessions_activity` (`last_activity`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

@@ -162,3 +162,37 @@ issues a new temporary one.
   `web/lib/legacy/site.js`).
 - Re-deploying after content changes: `npm run build` again and re-upload `web/out/*`.
   `api/config.php` and the database are untouched.
+
+---
+
+# Option 2: Hostinger **Node.js app** (no PHP needed)
+
+The same website + a built-in Node.js version of the API (`web/server/`, same endpoints and
+behaviour as the PHP API: contact form, contractor portal, uploads). Use this when the domain
+is set up as a Node.js app in hPanel.
+
+1. **Database** – exactly as step 1 above (keep the old data with
+   `db/migrate-from-old-site.sql`, or fresh `db/schema.sql`). Note the database name, user,
+   password and **host** shown in hPanel → Databases.
+2. **Build the ZIP** (or use the one you were given): `./deploy/package-node.sh` →
+   `deploy/dist/scarlethomes-nodejs.zip` (the `web/` source with `package.json` at the root;
+   no `node_modules`, no `.env`).
+3. hPanel → **Websites → Add website → Node.js app** (or the Node.js app's deploy page) →
+   **Upload your files** → choose `scarlethomes-nodejs.zip`. Hostinger detects **Next.js**.
+4. Build settings (check them on the settings step):
+   - Node.js version: **20 or 22**
+   - Install: `npm install` · Build: `npm run build` · Start: `npm start`
+     (runs `node server.js`, which serves `out/` and the API)
+5. **Environment variables** (settings step, or later in the app's settings): every variable in
+   `web/.env.example` – at least `DB_HOST`, `DB_NAME`, `DB_USER`, `DB_PASS`, `SITE_URL`,
+   `APP_SECRET`, the `SMTP_*`/`MAIL_*` values and `UPLOADS_DIR`.
+   - `UPLOADS_DIR`: a folder **outside** the app folder (e.g. `/home/u123456789/scarlet-uploads`)
+     so redeploys never delete portal files. Copy the old site's `storage/app/public/*` there.
+   - Fresh database only: `SETUP_ADMIN_EMAIL`, `SETUP_ADMIN_NAME`, `SETUP_ADMIN_PASSWORD` create
+     the first admin on start; remove them afterwards. With the old data the existing admins
+     already work.
+6. Deploy. Then check: the site opens over HTTPS, `/about` → `/about/`, a test enquiry on
+   `/contact/` arrives by email and shows in the portal, `/portal/` sign-in works.
+
+To update later: rebuild the ZIP and upload it again (the database and `UPLOADS_DIR` are kept).
+The app answers on the `PORT` Hostinger gives it; HTTPS and the domain are handled by Hostinger.
