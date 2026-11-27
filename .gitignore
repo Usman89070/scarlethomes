@@ -11,3 +11,4 @@ node_modules/
 /screens/
 /web/public/images/*.webp
 /web/tsconfig.tsbuildinfo
+/web/public/js/site.js

@@ -340,6 +340,28 @@ def emit(el, ctx, ind=0, hook=None):
         return open_ + '>' + ''.join(kids) + '</' + tag + '>'
     return open_ + '>\n' + ''.join(pad + '  ' + k + '\n' for k in kids) + pad + '</' + tag + '>'
 
+LEARN_MORE = {'/duplex-builders-sydney/': ' about duplexes', '/knockdown-rebuild-sydney/': ' about knockdown rebuilds',
+              '/new-home-builders-sydney/': ' about new homes', '/granny-flat-builders-sydney/': ' about granny flats'}
+
+def a11y(el):
+    """Invisible accessibility fixes (Lighthouse): no visual or layout change."""
+    if el['t'] != 'e':
+        return
+    a = dict(el['a'])
+    cls = a.get('class', '').split()
+    # filter chips are buttons, not tabs (role=tablist without role=tab children is invalid)
+    if 'sh-flt' in cls and a.get('role') == 'tablist':
+        el['a'] = [(k, 'group' if k == 'role' else v) for k, v in el['a']] + [('aria-label', 'Filter projects by facade style')]
+    # the phone link's text is display:none below the desktop breakpoint
+    if el['tag'] == 'a' and 'sh-phone' in cls and 'aria-label' not in a:
+        el['a'].append(('aria-label', 'Call the directors on 1800 727 538'))
+    # generic "Learn more" link text -> add visually hidden context
+    if el['tag'] == 'a' and a.get('href') in LEARN_MORE and el['c'] and el['c'][0]['t'] == 'x' and el['c'][0]['v'].strip() == 'Learn more' and not el.get('_vh'):
+        el['_vh'] = True
+        el['c'].insert(1, {'t': 'e', 'tag': 'span', 'ns': 'html', 'a': [('class', 'sh-vh')], 'c': [{'t': 'x', 'v': LEARN_MORE[a['href']]}]})
+    for c in el['c']:
+        a11y(c)
+
 def emit_img(el, ctx):
     a = OrderedDict(el['a'])
     src = fix_url(a.pop('src'))
@@ -394,6 +416,8 @@ def emit(el, ctx, ind=0, hook=None):  # noqa: F811
 # --------------------------------------------------------------------------------------------
 seo = json.load(open(os.path.join(REF, 'seo.json'), encoding='utf-8'))
 dom = {s: json.load(open(os.path.join(REF, 'dom', s + '.json'), encoding='utf-8')) for s in PAGES}
+for _s in PAGES:
+    a11y(dom[_s]['top'])
 
 def kids(el, cls=None):
     return [c for c in el['c'] if c['t'] == 'e' and (cls is None or cls in classes(c))]

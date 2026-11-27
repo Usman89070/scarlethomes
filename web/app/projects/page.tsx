@@ -41,7 +41,7 @@ export default function ProjectsPage() {
             </p>
           </div>
         </div>
-        <div className="sh-flt rv" role="tablist">
+        <div className="sh-flt rv" role="group" aria-label="Filter projects by facade style">
           <button className="on" data-f="all">All Homes<b>40</b></button>
           <button data-f="box-facade">Box Facade<b>16</b></button>
           <button data-f="french-facade">French Facade<b>12</b></button>

@@ -5,3 +5,5 @@
 :where(img[data-ar]){width:auto;height:auto}
 /* ...and its <source> must not become an (empty) flex/grid item either. */
 :where(.sh) picture>source{display:none}
+/* Visually hidden text (accessible names for generic "Learn more" links). */
+.sh .sh-vh{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}

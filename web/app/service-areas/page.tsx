@@ -160,6 +160,7 @@ export default function ServiceAreasPage() {
             <p>Two homes on one title, designed and approved for your block.</p>
             <a className="sh-link sh-cdl" href="/duplex-builders-sydney/">
               {"Learn more "}
+              <span className="sh-vh">{" about duplexes"}</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
             </a>
           </div>
@@ -175,6 +176,7 @@ export default function ServiceAreasPage() {
             <p>A brand-new home without leaving the street you love.</p>
             <a className="sh-link sh-cdl" href="/knockdown-rebuild-sydney/">
               {"Learn more "}
+              <span className="sh-vh">{" about knockdown rebuilds"}</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
             </a>
           </div>
@@ -190,6 +192,7 @@ export default function ServiceAreasPage() {
             <p>Single or double storey, personalised to your family.</p>
             <a className="sh-link sh-cdl" href="/new-home-builders-sydney/">
               {"Learn more "}
+              <span className="sh-vh">{" about new homes"}</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
             </a>
           </div>
@@ -205,6 +208,7 @@ export default function ServiceAreasPage() {
             <p>A self-contained second home for family or rental income.</p>
             <a className="sh-link sh-cdl" href="/granny-flat-builders-sydney/">
               {"Learn more "}
+              <span className="sh-vh">{" about granny flats"}</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
             </a>
           </div>
